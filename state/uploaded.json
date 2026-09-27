@@ -1,4 +1,26 @@
 {
-  "items": {},
-  "history": []
+  "history": [
+    {
+      "drive_file_id": "1gTzlVrrbkEtedptRr3OcnG84jdURx4Hh",
+      "filename": "03_Generated_video.mp4",
+      "instagram_id": null,
+      "instagram_permalink": "",
+      "title": "Making a Crown Cake Step-by-Step",
+      "uploaded_at_utc": "2026-09-27T22:35:17.191084+00:00Z",
+      "youtube_url": "https://www.youtube.com/watch?v=b_VZlRh5pA4",
+      "youtube_video_id": "b_VZlRh5pA4"
+    }
+  ],
+  "items": {
+    "1gTzlVrrbkEtedptRr3OcnG84jdURx4Hh": {
+      "drive_file_id": "1gTzlVrrbkEtedptRr3OcnG84jdURx4Hh",
+      "filename": "03_Generated_video.mp4",
+      "instagram_id": null,
+      "instagram_permalink": "",
+      "title": "Making a Crown Cake Step-by-Step",
+      "uploaded_at_utc": "2026-09-27T22:35:17.191084+00:00Z",
+      "youtube_url": "https://www.youtube.com/watch?v=b_VZlRh5pA4",
+      "youtube_video_id": "b_VZlRh5pA4"
+    }
+  }
 }

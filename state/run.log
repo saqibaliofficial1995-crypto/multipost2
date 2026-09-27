@@ -1,0 +1,26 @@
+
+===== RUN 2026-09-27T21:21:01.112568+00:00Z =====
+[start] max_uploads=1, dry_run=True
+[drive] Found 100 pending video(s) in Drive Inbox.
+
+-------- Processing: 03_Generated_video.mp4 (ID: 1gTzlVrrbkEtedptRr3OcnG84jdURx4Hh, Created: 2026-09-27T12:17:17.138Z) --------
+[drive] Downloading 03_Generated_video.mp4...
+[ffmpeg] Normalizing to 1080x1920 30fps...
+[ffmpeg] Normalization complete.
+[topic] No channel_topic configured. Gemini is watching the video to infer the channel topic...
+[topic] Automatically inferred channel topic from video visual content: 'Cake Decorating'
+[meta] Path used: video_ai_gemini
+[meta] Model used: gemini-flash-lite-latest
+[meta] Title (30 chars): Crown Cake Decorating Tutorial
+[meta] Description:
+Watch how a professional cake decorator creates an intricate and majestic royal crown cake.
+Learn expert techniques for molding fondant, shaping intricate details, and adding edible jewels to stunning crown cakes.
+Perfect for cake design enthusiasts and bakers looking for inspiration.
+
+#cakedecorating #crowncake #fondantart
+[meta] Tags (11 items, 124 chars): ['shorts', 'cake decorating', 'crown cake', 'fondant cake', 'royal cake', 'cake tutorial', 'baking', 'cake design', 'edible art', 'cake craft', 'pastry chef']
+[meta] Hashtags: ['#cakedecorating', '#crowncake', '#fondantart']
+[dry-run] Successfully generated and verified metadata for 03_Generated_video.mp4 (1gTzlVrrbkEtedptRr3OcnG84jdURx4Hh).
+[ig] disabled by config.
+
+[finish] Processed 1 video(s).

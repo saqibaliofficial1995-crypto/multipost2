@@ -77,3 +77,29 @@ Perfect your cake decorating skills with this detailed tutorial.
 [state] Recorded 1gTzlVrrbkEtedptRr3OcnG84jdURx4Hh in state/uploaded.json
 
 [finish] Processed 1 video(s).
+
+===== RUN 2026-09-27T22:53:19.036990+00:00Z =====
+[start] max_uploads=1, dry_run=True
+[drive] Found 288 pending video(s) in Drive Inbox.
+
+-------- Processing: 08_Generated_video.mp4 (ID: 1ZxbeCDRnngDK5X0xCwZedqXVL31ol7HL, Created: 2026-09-27T12:17:24.681Z) --------
+[drive] Downloading 08_Generated_video.mp4...
+[ffmpeg] Normalizing to 1080x1920 30fps...
+[ffmpeg] Normalization complete.
+[topic] No channel_topic configured. Gemini is watching the video to infer the channel topic...
+[topic] Automatically inferred channel topic from video visual content: 'Cake Decorating'
+[meta] Path used: video_ai_gemini
+[meta] Model used: gemini-flash-lite-latest
+[meta] Title (43 chars): How to Make a Realistic Tiger Cake Tutorial
+[meta] Description:
+Watch how a talented baker transforms cake layers and modeling fondant into a stunning, lifelike tiger sculpture standing in edible grass.
+Learn step-by-step cake decorating techniques to sculpt, cover, and paint intricate details like fur and stripes.
+Perfect for animal cake enthusiasts and advanced decorators looking for creative inspiration.
+
+#TigerCake #CakeDecorating #FondantArt
+[meta] Tags (11 items, 145 chars): ['shorts', 'tiger cake', 'cake decorating', 'sculpted cake', 'fondant tiger', 'realistic cake', 'animal cake', 'cake tutorial', 'fondant sculpting', 'baking tutorial', 'cake art']
+[meta] Hashtags: ['#TigerCake', '#CakeDecorating', '#FondantArt']
+[dry-run] Successfully generated and verified metadata for 08_Generated_video.mp4 (1ZxbeCDRnngDK5X0xCwZedqXVL31ol7HL).
+[ig] disabled by config.
+
+[finish] Processed 1 video(s).

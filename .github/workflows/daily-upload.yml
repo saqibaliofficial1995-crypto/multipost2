@@ -67,7 +67,7 @@ jobs:
         run: |
           git config user.name "nooahali-rgb"
           git config user.email "nooahali@gmail.com"
-          git add state/uploaded.json state/run.log config.ci.yaml || true
+          git add -A state/ config.ci.yaml || true
           if git diff --staged --quiet; then
             echo "koi state change nahi"
           else

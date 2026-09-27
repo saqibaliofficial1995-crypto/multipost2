@@ -1,0 +1,22 @@
+tokens/
+config.yaml
+*.sqlite3*
+work/
+processed/
+inbox/*
+!inbox/README.txt
+__pycache__/
+.venv/
+*.log
+!state/run.log
+.setup_state.json
+.setup_state_2.json
+work_2/
+
+# Secrets and credentials
+.temp_key.txt
+*.key
+*.secret
+*.token
+.env
+.env.*

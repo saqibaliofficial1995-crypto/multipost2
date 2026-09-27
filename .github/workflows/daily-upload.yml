@@ -1,0 +1,86 @@
+name: Daily Multipost Upload
+
+on:
+  schedule:
+    - cron: "30 5,8,11,14,17 * * *"   # 10:30, 13:30, 16:30, 19:30, 22:30 PKT (UTC 5:30, 8:30, 11:30, 14:30, 17:30)
+  workflow_dispatch:
+    inputs:
+      max_uploads:
+        description: "Max videos for this run"
+        required: false
+        default: "1"
+      dry_run:
+        description: "true = test run without uploading"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: multipost-upload
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+
+      - name: Install Python deps
+        run: pip install -r requirements.txt
+
+      - name: Diagnose Gemini API Key
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/diagnose_gemini.py
+
+      - name: Run uploader
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          DRIVE_FOLDER_ID: ${{ secrets.DRIVE_FOLDER_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MAX_UPLOADS: ${{ github.event.inputs.max_uploads || '1' }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+        run: python src/ci_run.py --config config.ci.yaml
+
+      - name: Commit state
+        if: always()
+        run: |
+          git config user.name "multipost-bot"
+          git config user.email "actions@github.com"
+          git add state/uploaded.json state/run.log config.ci.yaml || true
+          if git diff --staged --quiet; then
+            echo "koi state change nahi"
+          else
+            git commit -m "chore: multipost state update [skip ci]"
+            git pull --rebase --autostash origin ${{ github.ref_name }} || true
+            git push
+          fi
+
+      - name: Upload run log as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: multipost-log-${{ github.run_number }}
+          path: state/run.log
+          retention-days: 14
+          if-no-files-found: ignore

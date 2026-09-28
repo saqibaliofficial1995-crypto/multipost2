@@ -185,3 +185,31 @@ Learn expert cake decorating techniques to create stunning thematic desserts at 
 [state] Recorded 1PicGl-txJYgZBeh1fpWgUoxOALkcjmsL in state/uploaded.json
 
 [finish] Processed 1 video(s).
+
+===== RUN 2026-09-28T11:43:44.069359+00:00Z =====
+[start] max_uploads=1, dry_run=False
+[drive] Found 286 unuploaded video(s) in Drive Inbox.
+
+-------- Processing: 01_Generated_video.mp4 (ID: 1koDd-lgJXvZdHTr9xK7LkUWa3sUppNv1, Created: 2026-09-27T12:17:40.338Z) --------
+[drive] Downloading 01_Generated_video.mp4...
+[ffmpeg] Normalizing to 1080x1920 30fps...
+[ffmpeg] Normalization complete.
+[topic] No channel_topic configured. Gemini is watching the video to infer the channel topic...
+[topic] Automatically inferred channel topic from video visual content: 'Cake Decorating'
+[meta] Path used: video_ai_gemini
+[meta] Model used: gemini-flash-lite-latest
+[meta] Title (44 chars): How to Make a Cabin Cake Decorating Tutorial
+[meta] Description:
+Watch step-by-step as a talented baker transforms stacked layers of cake into a detailed rustic log cabin masterpiece complete with edible details, stone chimney, and glowing windows.
+Perfect for cake decorating enthusiasts and creative baking inspiration.
+
+#cakedecorating #baking #cakedesign
+[meta] Tags (11 items, 137 chars): ['shorts', 'cake decorating', 'cabin cake', 'log cabin cake', 'baking tutorial', 'fondant cake', 'cake art', 'creative baking', 'rustic cake', 'cake design', 'edible art']
+[meta] Hashtags: ['#cakedecorating', '#baking', '#cakedesign']
+[yt] Uploading to YouTube...
+[yt] Published successfully: https://www.youtube.com/watch?v=vwsTG2VhQqk
+[ig] disabled by config.
+[drive] Moved 01_Generated_video.mp4 to 'Uploaded' subfolder.
+[state] Recorded 1koDd-lgJXvZdHTr9xK7LkUWa3sUppNv1 in state/uploaded.json
+
+[finish] Processed 1 video(s).

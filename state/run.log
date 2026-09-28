@@ -103,3 +103,28 @@ Perfect for animal cake enthusiasts and advanced decorators looking for creative
 [ig] disabled by config.
 
 [finish] Processed 1 video(s).
+
+===== RUN 2026-09-28T00:12:28.377267+00:00Z =====
+[start] max_uploads=1, dry_run=True
+[drive] Found 288 unuploaded video(s) in Drive Inbox.
+
+-------- Processing: 08_Generated_video.mp4 (ID: 1ZxbeCDRnngDK5X0xCwZedqXVL31ol7HL, Created: 2026-09-27T12:17:24.681Z) --------
+[drive] Downloading 08_Generated_video.mp4...
+[ffmpeg] Normalizing to 1080x1920 30fps...
+[ffmpeg] Normalization complete.
+[topic] No channel_topic configured. Gemini is watching the video to infer the channel topic...
+[topic] Automatically inferred channel topic from video visual content: 'Cake Decorating'
+[meta] Path used: video_ai_gemini
+[meta] Model used: gemini-flash-lite-latest
+[meta] Title (43 chars): How to Make a Realistic Tiger Cake Tutorial
+[meta] Description:
+Watch how a talented baker transforms cake layers and modeling paste into a stunning, lifelike tiger cake.
+Learn step-by-step cake sculpting and painting techniques to create your own jungle masterpiece.
+
+#cakedecorating #tigercake #cakedesign
+[meta] Tags (11 items, 132 chars): ['shorts', 'tiger cake', 'cake decorating', 'cake tutorial', 'realistic cake', 'sculpted cake', 'fondant tiger', 'baking', 'pastry art', 'animal cake', 'cake design']
+[meta] Hashtags: ['#cakedecorating', '#tigercake', '#cakedesign']
+[dry-run] Successfully generated and verified metadata for 08_Generated_video.mp4 (1ZxbeCDRnngDK5X0xCwZedqXVL31ol7HL).
+[ig] disabled by config.
+
+[finish] Processed 1 video(s).

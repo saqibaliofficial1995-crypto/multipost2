@@ -237,3 +237,28 @@ Exclusive highlights.
 [block] Safety block: Publishing blocked because metadata path is 'topic_default_fallback'. Only 'video_ai_gemini' (or sidecar .txt) is allowed to publish live.
 
 [finish] Processed 0 video(s).
+
+===== RUN 2026-09-28T17:41:49.139782+00:00Z =====
+[start] max_uploads=1, dry_run=False
+[drive] Found 285 unuploaded video(s) in Drive Inbox.
+
+-------- Processing: 02_Generated_video.mp4 (ID: 1NZ_TD0qRb7M4RM5gELQUwiWdIkKJzdEj, Created: 2026-09-27T12:17:46.609Z) --------
+[retry] Attempt 2/3 for '02_Generated_video.mp4' (prior error: Publishing blocked: topic_default_fallback not allowed for live publish)
+[drive] Downloading 02_Generated_video.mp4...
+[ffmpeg] Normalizing to 1080x1920 30fps...
+[ffmpeg] Normalization complete.
+[topic] No channel_topic configured. Gemini is watching the video to infer the channel topic...
+[topic] Automatically inferred channel topic from video visual content: 'Cake Decorating'
+[meta] Path used: topic_default_fallback
+[meta] Title (26 chars): Cake Decorating Highlights
+[meta] Description:
+Experience the finest cake decorating.
+Follow for daily luxury updates.
+Exclusive highlights.
+
+#shorts #luxury #lifestyle
+[meta] Tags (14 items, 113 chars): ['shorts', 'viral', 'luxury', 'lifestyle', 'dubai', 'millionaire', 'billionaire', 'supercars', 'mansion', 'wealth', 'aesthetic', 'vip', 'exclusive', 'rich']
+[meta] Hashtags: ['#shorts', '#luxury', '#lifestyle']
+[block] Safety block: Publishing blocked because metadata path is 'topic_default_fallback'. Only 'video_ai_gemini' (or sidecar .txt) is allowed to publish live.
+
+[finish] Processed 0 video(s).

@@ -128,3 +128,32 @@ Learn step-by-step cake sculpting and painting techniques to create your own jun
 [ig] disabled by config.
 
 [finish] Processed 1 video(s).
+
+===== RUN 2026-09-28T05:41:42.122472+00:00Z =====
+[start] max_uploads=1, dry_run=False
+[drive] Found 288 unuploaded video(s) in Drive Inbox.
+
+-------- Processing: 08_Generated_video.mp4 (ID: 1ZxbeCDRnngDK5X0xCwZedqXVL31ol7HL, Created: 2026-09-27T12:17:24.681Z) --------
+[drive] Downloading 08_Generated_video.mp4...
+[ffmpeg] Normalizing to 1080x1920 30fps...
+[ffmpeg] Normalization complete.
+[topic] No channel_topic configured. Gemini is watching the video to infer the channel topic...
+[topic] Automatically inferred channel topic from video visual content: 'Cake Decorating'
+[meta] Path used: video_ai_gemini
+[meta] Model used: gemini-flash-lite-latest
+[meta] Title (47 chars): How to Make a Realistic Tiger Cake Step-by-Step
+[meta] Description:
+Watch a skilled cake artist sculpt and decorate an incredible 3D tiger cake from scratch.
+Learn the techniques for layering, shaping, and painting realistic fondant details.
+Perfect for cake decorating enthusiasts and animal cake tutorials.
+
+#cakedecorating #tigercake #caketutorial
+[meta] Tags (11 items, 130 chars): ['shorts', 'cake decorating', 'tiger cake', 'fondant sculpture', 'cake tutorial', 'baking', '3d cake', 'realistic cake', 'cake art', 'edible art', 'dessert design']
+[meta] Hashtags: ['#cakedecorating', '#tigercake', '#caketutorial']
+[yt] Uploading to YouTube...
+[yt] Published successfully: https://www.youtube.com/watch?v=j6_uL67SV6U
+[ig] disabled by config.
+[drive] Moved 08_Generated_video.mp4 to 'Uploaded' subfolder.
+[state] Recorded 1ZxbeCDRnngDK5X0xCwZedqXVL31ol7HL in state/uploaded.json
+
+[finish] Processed 1 video(s).

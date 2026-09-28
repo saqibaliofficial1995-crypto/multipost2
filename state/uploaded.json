@@ -42,6 +42,10 @@
     }
   ],
   "items": {
+    "1NZ_TD0qRb7M4RM5gELQUwiWdIkKJzdEj": {
+      "attempts": 1,
+      "last_error": "Publishing blocked: topic_default_fallback not allowed for live publish"
+    },
     "1PicGl-txJYgZBeh1fpWgUoxOALkcjmsL": {
       "drive_file_id": "1PicGl-txJYgZBeh1fpWgUoxOALkcjmsL",
       "filename": "04_Generated_video.mp4",

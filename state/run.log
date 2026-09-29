@@ -348,3 +348,31 @@ Perfect for cake design enthusiasts and aspiring bakers.
 [state] Recorded 1b_8fh0Jp0mXMIBVMfdAoMS20MOmyZ-5w in state/uploaded.json
 
 [finish] Processed 1 video(s).
+
+===== RUN 2026-09-29T14:44:18.055427+00:00Z =====
+[start] max_uploads=1, dry_run=False
+[drive] Found 282 unuploaded video(s) in Drive Inbox.
+
+-------- Processing: 07_Generated_video.mp4 (ID: 1d7aR-q6Ms472-Ky1k3z1m6HGBhUPGXj4, Created: 2026-09-27T12:18:09.088Z) --------
+[drive] Downloading 07_Generated_video.mp4...
+[ffmpeg] Normalizing to 1080x1920 30fps...
+[ffmpeg] Normalization complete.
+[topic] No channel_topic configured. Gemini is watching the video to infer the channel topic...
+[topic] Automatically inferred channel topic from video visual content: 'Cake Decorating'
+[meta] Path used: video_ai_gemini
+[meta] Model used: gemini-flash-lite-latest
+[meta] Title (46 chars): Making a Stunning Sea Turtle Cake Step-by-Step
+[meta] Description:
+Watch how a professional cake artist transforms simple sponge layers into an intricate sea turtle masterpiece.
+From piping frosting and layering shapes to sculpting the shell and hand-painting fine details, this tutorial shows the complete creation of an underwater-themed cake.
+
+#cakedecorating #seaturtle #cakedesign
+[meta] Tags (12 items, 155 chars): ['shorts', 'cake decorating', 'sea turtle cake', 'fondant cake', 'cake art', 'baking tutorial', 'cake design', 'creative cakes', 'sculpted cake', 'custom cake', 'pastry chef', 'cake tutorial']
+[meta] Hashtags: ['#cakedecorating', '#seaturtle', '#cakedesign']
+[yt] Uploading to YouTube...
+[yt] Published successfully: https://www.youtube.com/watch?v=0zfohi15VwA
+[ig] disabled by config.
+[drive] Moved 07_Generated_video.mp4 to 'Uploaded' subfolder.
+[state] Recorded 1d7aR-q6Ms472-Ky1k3z1m6HGBhUPGXj4 in state/uploaded.json
+
+[finish] Processed 1 video(s).

@@ -291,3 +291,31 @@ Learn the step-by-step process of shaping fondant, adding feathered wings, and c
 [state] Recorded 1NZ_TD0qRb7M4RM5gELQUwiWdIkKJzdEj in state/uploaded.json
 
 [finish] Processed 1 video(s).
+
+===== RUN 2026-09-29T08:43:21.405889+00:00Z =====
+[start] max_uploads=1, dry_run=False
+[drive] Found 284 unuploaded video(s) in Drive Inbox.
+
+-------- Processing: 05_Generated_video.mp4 (ID: 17kmE7q3HRlg5ZzqZAEMPNazFXogBgJfe, Created: 2026-09-27T12:17:53.539Z) --------
+[drive] Downloading 05_Generated_video.mp4...
+[ffmpeg] Normalizing to 1080x1920 30fps...
+[ffmpeg] Normalization complete.
+[topic] No channel_topic configured. Gemini is watching the video to infer the channel topic...
+[topic] Automatically inferred channel topic from video visual content: 'Cake Decorating'
+[meta] Path used: video_ai_gemini
+[meta] Model used: gemini-flash-lite-latest
+[meta] Title (41 chars): How to Make a Magical Mushroom House Cake
+[meta] Description:
+Watch how a talented baker transforms stacked layers of cake into an enchanting mushroom house complete with intricate details.
+Follow along as frosting, fondant, and edible decorations bring this whimsical woodland cake to life.
+
+#cakedecorating #baking #cakeart
+[meta] Tags (13 items, 207 chars): ['shorts', 'cake decorating', 'mushroom house cake', 'fantasy cake tutorial', 'fondant cake design', 'woodland cake', 'creative baking', 'cake artist', 'baking tutorial', 'sculpted cake', 'magical cake', 'how to make a cake', 'dessert decoration']
+[meta] Hashtags: ['#cakedecorating', '#baking', '#cakeart']
+[yt] Uploading to YouTube...
+[yt] Published successfully: https://www.youtube.com/watch?v=cMc2pPAJKfw
+[ig] disabled by config.
+[drive] Moved 05_Generated_video.mp4 to 'Uploaded' subfolder.
+[state] Recorded 17kmE7q3HRlg5ZzqZAEMPNazFXogBgJfe in state/uploaded.json
+
+[finish] Processed 1 video(s).

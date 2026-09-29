@@ -39,12 +39,28 @@
       "uploaded_at_utc": "2026-09-28T11:45:10.395941+00:00Z",
       "youtube_url": "https://www.youtube.com/watch?v=vwsTG2VhQqk",
       "youtube_video_id": "vwsTG2VhQqk"
+    },
+    {
+      "drive_file_id": "1NZ_TD0qRb7M4RM5gELQUwiWdIkKJzdEj",
+      "filename": "02_Generated_video.mp4",
+      "instagram_id": null,
+      "instagram_permalink": "",
+      "title": "Swan Cake Decorating Tutorial",
+      "uploaded_at_utc": "2026-09-29T05:42:50.342040+00:00Z",
+      "youtube_url": "https://www.youtube.com/watch?v=1LHfr9r9H18",
+      "youtube_video_id": "1LHfr9r9H18"
     }
   ],
   "items": {
     "1NZ_TD0qRb7M4RM5gELQUwiWdIkKJzdEj": {
-      "attempts": 2,
-      "last_error": "Publishing blocked: topic_default_fallback not allowed for live publish"
+      "drive_file_id": "1NZ_TD0qRb7M4RM5gELQUwiWdIkKJzdEj",
+      "filename": "02_Generated_video.mp4",
+      "instagram_id": null,
+      "instagram_permalink": "",
+      "title": "Swan Cake Decorating Tutorial",
+      "uploaded_at_utc": "2026-09-29T05:42:50.342040+00:00Z",
+      "youtube_url": "https://www.youtube.com/watch?v=1LHfr9r9H18",
+      "youtube_video_id": "1LHfr9r9H18"
     },
     "1PicGl-txJYgZBeh1fpWgUoxOALkcjmsL": {
       "drive_file_id": "1PicGl-txJYgZBeh1fpWgUoxOALkcjmsL",

@@ -319,3 +319,32 @@ Follow along as frosting, fondant, and edible decorations bring this whimsical w
 [state] Recorded 17kmE7q3HRlg5ZzqZAEMPNazFXogBgJfe in state/uploaded.json
 
 [finish] Processed 1 video(s).
+
+===== RUN 2026-09-29T11:42:04.021807+00:00Z =====
+[start] max_uploads=1, dry_run=False
+[drive] Found 283 unuploaded video(s) in Drive Inbox.
+
+-------- Processing: 10_Generated_video.mp4 (ID: 1b_8fh0Jp0mXMIBVMfdAoMS20MOmyZ-5w, Created: 2026-09-27T12:18:00.777Z) --------
+[drive] Downloading 10_Generated_video.mp4...
+[ffmpeg] Normalizing to 1080x1920 30fps...
+[ffmpeg] Normalization complete.
+[topic] No channel_topic configured. Gemini is watching the video to infer the channel topic...
+[topic] Automatically inferred channel topic from video visual content: 'Cake Decorating'
+[meta] Path used: video_ai_gemini
+[meta] Model used: gemini-flash-lite-latest
+[meta] Title (38 chars): Space Shuttle Cake Decorating Tutorial
+[meta] Description:
+Watch how a baker meticulously crafts a detailed space shuttle cake from scratch.
+Follow step-by-step techniques for decorating a space-themed masterpiece with edible clouds and structural details.
+Perfect for cake design enthusiasts and aspiring bakers.
+
+#cakedecorating #spaceshuttle #baking
+[meta] Tags (11 items, 149 chars): ['shorts', 'cake decorating', 'space shuttle cake', 'baking tutorial', 'fondant cake', 'creative baking', 'cake art', 'dessert design', 'themed cakes', 'pastry chef', 'cake tutorial']
+[meta] Hashtags: ['#cakedecorating', '#spaceshuttle', '#baking']
+[yt] Uploading to YouTube...
+[yt] Published successfully: https://www.youtube.com/watch?v=z4NajDSDgZE
+[ig] disabled by config.
+[drive] Moved 10_Generated_video.mp4 to 'Uploaded' subfolder.
+[state] Recorded 1b_8fh0Jp0mXMIBVMfdAoMS20MOmyZ-5w in state/uploaded.json
+
+[finish] Processed 1 video(s).

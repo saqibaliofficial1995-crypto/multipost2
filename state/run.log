@@ -518,3 +518,32 @@ This detailed cake decorating tutorial shows how to construct, frost, and sculpt
 [state] Recorded 12qEzE4PmqXgFTqtQRLSVdt4lPv83HBKw in state/uploaded.json
 
 [finish] Processed 1 video(s).
+
+===== RUN 2026-09-30T17:41:30.988941+00:00Z =====
+[start] max_uploads=1, dry_run=False
+[drive] Found 276 unuploaded video(s) in Drive Inbox.
+
+-------- Processing: 18_Generated_video.mp4 (ID: 1ketH0xeZiQkSOx0XVEV2b9n4_h0h3LVr, Created: 2026-09-27T12:18:54.898Z) --------
+[drive] Downloading 18_Generated_video.mp4...
+[ffmpeg] Normalizing to 1080x1920 30fps...
+[ffmpeg] Normalization complete.
+[topic] No channel_topic configured. Gemini is watching the video to infer the channel topic...
+[topic] Automatically inferred channel topic from video visual content: 'Cake Decorating'
+[meta] Path used: video_ai_gemini
+[meta] Model used: gemini-flash-lite-latest
+[meta] Title (43 chars): Gothic Clock Tower Cake Decorating Tutorial
+[meta] Description:
+Watch how a skilled cake decorator transforms simple layers into an intricate Gothic clock tower cake.
+Learn step-by-step techniques for icing, shaping, and adding detailed architectural fondant elements.
+Create your own stunning masterpiece with these professional cake design skills.
+
+#cake #cakedecorating #gothiccake
+[meta] Tags (11 items, 186 chars): ['shorts', 'cake decorating', 'gothic clock tower cake', 'fondant cake design', 'advanced cake tutorial', 'architecture cake', 'baking and pastry', 'creative cake art', 'sculpted cake', 'cake artistry', 'dessert design']
+[meta] Hashtags: ['#cake', '#cakedecorating', '#gothiccake']
+[yt] Uploading to YouTube...
+[yt] Published successfully: https://www.youtube.com/watch?v=zWuLvpre10g
+[ig] disabled by config.
+[drive] Moved 18_Generated_video.mp4 to 'Uploaded' subfolder.
+[state] Recorded 1ketH0xeZiQkSOx0XVEV2b9n4_h0h3LVr in state/uploaded.json
+
+[finish] Processed 1 video(s).

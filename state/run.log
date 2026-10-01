@@ -632,3 +632,31 @@ Learn amazing cake design techniques to create your own edible masterpiece.
 [state] Recorded 1EhGGg5CZNGQBp8plhSR42iS8eyvxY90Z in state/uploaded.json
 
 [finish] Processed 1 video(s).
+
+===== RUN 2026-10-01T14:54:10.062297+00:00Z =====
+[start] max_uploads=1, dry_run=False
+[drive] Found 272 unuploaded video(s) in Drive Inbox.
+
+-------- Processing: 17_Generated_video.mp4 (ID: 1gGjJt-Yyx-aI8UlsgG6ujixQEGsQDTDC, Created: 2026-09-27T12:19:26.907Z) --------
+[drive] Downloading 17_Generated_video.mp4...
+[ffmpeg] Normalizing to 1080x1920 30fps...
+[ffmpeg] Normalization complete.
+[topic] No channel_topic configured. Gemini is watching the video to infer the channel topic...
+[topic] Automatically inferred channel topic from video visual content: 'Cake Decorating'
+[meta] Path used: video_ai_gemini
+[meta] Model used: gemini-flash-lite-latest
+[meta] Title (39 chars): Samurai Helmet Cake Decorating Tutorial
+[meta] Description:
+Watch step-by-step how to sculpt and decorate an intricate samurai helmet cake using fondant and edible paints.
+Discover professional cake decorating techniques to transform simple layers into incredible edible art.
+
+#cakedecorating #samuraicake #fondantart
+[meta] Tags (11 items, 154 chars): ['shorts', 'cake decorating', 'samurai helmet cake', 'fondant sculpture', 'cake art', 'edible art', 'baking tutorial', 'creative cakes', 'pastry chef', 'cake design', 'fondant decoration']
+[meta] Hashtags: ['#cakedecorating', '#samuraicake', '#fondantart']
+[yt] Uploading to YouTube...
+[yt] Published successfully: https://www.youtube.com/watch?v=aOVqTZ4z-ZU
+[ig] disabled by config.
+[drive] Moved 17_Generated_video.mp4 to 'Uploaded' subfolder.
+[state] Recorded 1gGjJt-Yyx-aI8UlsgG6ujixQEGsQDTDC in state/uploaded.json
+
+[finish] Processed 1 video(s).

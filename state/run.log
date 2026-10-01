@@ -547,3 +547,32 @@ Create your own stunning masterpiece with these professional cake design skills.
 [state] Recorded 1ketH0xeZiQkSOx0XVEV2b9n4_h0h3LVr in state/uploaded.json
 
 [finish] Processed 1 video(s).
+
+===== RUN 2026-10-01T05:42:52.251911+00:00Z =====
+[start] max_uploads=1, dry_run=False
+[drive] Found 275 unuploaded video(s) in Drive Inbox.
+
+-------- Processing: 13_Generated_video.mp4 (ID: 1YTf0NWnQuVNKAV8u2aWDMnk1iVgoolBX, Created: 2026-09-27T12:19:03.037Z) --------
+[drive] Downloading 13_Generated_video.mp4...
+[ffmpeg] Normalizing to 1080x1920 30fps...
+[ffmpeg] Normalization complete.
+[topic] No channel_topic configured. Gemini is watching the video to infer the channel topic...
+[topic] Automatically inferred channel topic from video visual content: 'Cake Decorating'
+[meta] Path used: video_ai_gemini
+[meta] Model used: gemini-flash-lite-latest
+[meta] Title (31 chars): Sphinx Cake Decorating Tutorial
+[meta] Description:
+Watch how a talented baker transforms stacked cake layers and fondant into an incredible sphinx sculpture.
+Learn step-by-step cake decorating techniques to sculpt, detail, and paint an elaborate Egyptian sphinx cake.
+Perfect for creative baking enthusiasts looking for advanced cake art inspiration.
+
+#cakedecorating #sphinx #cakeart
+[meta] Tags (11 items, 157 chars): ['shorts', 'sphinx cake', 'cake decorating', 'fondant sculpting', 'egyptian cake', 'cake art', 'creative baking', 'sculpted cake', 'fondant cake', 'cake tutorial', 'advanced cake decorating']
+[meta] Hashtags: ['#cakedecorating', '#sphinx', '#cakeart']
+[yt] Uploading to YouTube...
+[yt] Published successfully: https://www.youtube.com/watch?v=HsipzFz0JoQ
+[ig] disabled by config.
+[drive] Moved 13_Generated_video.mp4 to 'Uploaded' subfolder.
+[state] Recorded 1YTf0NWnQuVNKAV8u2aWDMnk1iVgoolBX in state/uploaded.json
+
+[finish] Processed 1 video(s).

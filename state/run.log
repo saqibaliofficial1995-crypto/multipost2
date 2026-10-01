@@ -660,3 +660,31 @@ Discover professional cake decorating techniques to transform simple layers into
 [state] Recorded 1gGjJt-Yyx-aI8UlsgG6ujixQEGsQDTDC in state/uploaded.json
 
 [finish] Processed 1 video(s).
+
+===== RUN 2026-10-01T17:42:12.758483+00:00Z =====
+[start] max_uploads=1, dry_run=False
+[drive] Found 271 unuploaded video(s) in Drive Inbox.
+
+-------- Processing: 15_Generated_video.mp4 (ID: 1ZrRNX3wsa3xRFP8L6z2I4Ll0F88QM8sP, Created: 2026-09-27T12:19:33.807Z) --------
+[drive] Downloading 15_Generated_video.mp4...
+[ffmpeg] Normalizing to 1080x1920 30fps...
+[ffmpeg] Normalization complete.
+[topic] No channel_topic configured. Gemini is watching the video to infer the channel topic...
+[topic] Automatically inferred channel topic from video visual content: 'Cake Decorating'
+[meta] Path used: video_ai_gemini
+[meta] Model used: gemini-flash-lite-latest
+[meta] Title (39 chars): Making a 3D Elk Cake with Sugar Antlers
+[meta] Description:
+Watch how a cake artist constructs a stunning 3D elk cake complete with textured fur and crystal sugar antlers.
+Learn professional cake sculpting techniques and decorative touches to create your own edible masterpieces.
+
+#cakedecorating #sculptedcake #cakeart
+[meta] Tags (11 items, 129 chars): ['shorts', 'cake decorating', 'elk cake', '3d cake', 'sculpted cake', 'sugar antlers', 'cake art', 'fondant cake', 'baking', 'dessert decoration', 'creative cake']
+[meta] Hashtags: ['#cakedecorating', '#sculptedcake', '#cakeart']
+[yt] Uploading to YouTube...
+[yt] Published successfully: https://www.youtube.com/watch?v=qT-EkUpi4ws
+[ig] disabled by config.
+[drive] Moved 15_Generated_video.mp4 to 'Uploaded' subfolder.
+[state] Recorded 1ZrRNX3wsa3xRFP8L6z2I4Ll0F88QM8sP in state/uploaded.json
+
+[finish] Processed 1 video(s).

@@ -716,3 +716,31 @@ Learn expert cake decorating skills and edible art methods to make your own incr
 [state] Recorded 1ap1qt_lJw64uoqtHdLXUCxAhLVopYxxY in state/uploaded.json
 
 [finish] Processed 1 video(s).
+
+===== RUN 2026-10-02T11:42:54.950705+00:00Z =====
+[start] max_uploads=1, dry_run=False
+[drive] Found 269 unuploaded video(s) in Drive Inbox.
+
+-------- Processing: 25_Generated_video.mp4 (ID: 1LCnyuWNZUdn4fQOLheqlWnu8WBQTyLfr, Created: 2026-09-27T12:19:48.092Z) --------
+[drive] Downloading 25_Generated_video.mp4...
+[ffmpeg] Normalizing to 1080x1920 30fps...
+[ffmpeg] Normalization complete.
+[topic] No channel_topic configured. Gemini is watching the video to infer the channel topic...
+[topic] Automatically inferred channel topic from video visual content: 'Cake Decorating'
+[meta] Path used: video_ai_gemini
+[meta] Model used: gemini-flash-lite-latest
+[meta] Title (51 chars): Making a realistic lighthouse cake with ocean waves
+[meta] Description:
+Watch how a talented cake decorator builds an incredible lighthouse cake complete with crashing blue ocean waves and rocky details. This step-by-step tutorial shows the process of assembling, icing, and decorating an amazing maritime cake design.
+Learn creative techniques for shaping cake structures, working with fondant, and adding realistic textures to your own baking projects.
+
+#cakedecorating #lighthousecake #baking
+[meta] Tags (11 items, 155 chars): ['shorts', 'lighthouse cake', 'cake decorating', 'ocean cake', 'fondant cake tutorial', 'baking tutorial', 'wave cake', 'sculpted cake', 'cake art', 'creative baking', 'dessert decoration']
+[meta] Hashtags: ['#cakedecorating', '#lighthousecake', '#baking']
+[yt] Uploading to YouTube...
+[yt] Published successfully: https://www.youtube.com/watch?v=bzEbNBPUF9s
+[ig] disabled by config.
+[drive] Moved 25_Generated_video.mp4 to 'Uploaded' subfolder.
+[state] Recorded 1LCnyuWNZUdn4fQOLheqlWnu8WBQTyLfr in state/uploaded.json
+
+[finish] Processed 1 video(s).

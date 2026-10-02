@@ -65,8 +65,8 @@ def validate_metadata(data, duration=0, channel_topic="", is_text_only=False):
     tags = data.get("tags", [])
     hashtags = data.get("hashtags", [])
 
-    # Title must be under 60 characters and non-empty
-    if not title or len(title) >= 60:
+    # Title must be under 75 characters and non-empty
+    if not title or len(title) > 75:
         print(f"[llm_meta] Validation reject: Title length invalid ({len(title)} chars): '{title}'")
         return None
 
@@ -142,8 +142,8 @@ def validate_metadata(data, duration=0, channel_topic="", is_text_only=False):
     # Ensure 10 to 15 tags by supplementing from niche pool
     if len(clean_tags) < 10:
         base_pool = [
-            "luxury", "lifestyle", "dubai", "millionaire", "billionaire",
-            "supercars", "mansion", "wealth", "aesthetic", "vip", "exclusive", "rich", "viral"
+            "satisfying", "viral", "creative", "amazing", "art",
+            "diy", "craft", "trending", "shorts", "explore", "pastrychef", "dessert"
         ]
         if channel_topic:
             for w in channel_topic.split():
@@ -195,6 +195,13 @@ def validate_metadata(data, duration=0, channel_topic="", is_text_only=False):
         ht_line = " ".join(clean_hashtags)
         if ht_line not in desc:
             desc = f"{desc}\n\n{ht_line}"
+
+    # Ensure #Shorts is present in title for vertical Shorts under 3 minutes
+    if duration <= 180 and "#shorts" not in title.lower():
+        if len(title) + 8 <= 75:
+            title = f"{title} #Shorts"
+        else:
+            title = f"{title[:65].rstrip()} #Shorts"
 
     return {
         "title": title,
@@ -353,7 +360,7 @@ def generate_from_video(video_path, duration, channel_topic, api_key, candidate_
         remote_name, remote_uri = upload_video_to_gemini(video_path, api_key)
         print(f"[llm_meta] Video uploaded and ACTIVE ({remote_name}). Analyzing content...")
 
-        prompt = f"""You are an elite YouTube SEO metadata specialist.
+        prompt = f"""You are a world-class YouTube Shorts growth and viral algorithm specialist.
 Analyze this video carefully.
 Channel topic / niche: '{channel_topic}'.
 Video duration: {duration} seconds.
@@ -363,12 +370,19 @@ CRITICAL TRUTHFULNESS & ANTI-HALLUCINATION RULES:
 - NEVER estimate, invent, or guess a price, valuation, or cost (NEVER use '$', 'million', 'billion', 'AED', or price figures like '$50M').
 - NEVER invent square footage, acreage, or architectural specs not visibly shown on screen.
 - NEVER claim specific brand names or unverified private locations unless clearly readable on screen.
-- Ground the title, description, and tags entirely in the genuine visual content (architecture, interior design style, materials, lighting, ambiance, observable actions).
+- Ground the title, description, and tags entirely in genuine visual content.
+
+VIRAL YOUTUBE SHORTS RULES:
+- Title MUST be under 60 characters and END with #Shorts.
+- Create an irresistible curiosity gap, awe, or satisfying visual hook (e.g. 'Wait for the final result... 😱 #Shorts', 'Is this REAL or CAKE?! 🎂🤯 #Shorts', 'Most satisfying cake reveal ever! 😍 #Shorts', 'Sculpting an impossible cake! ✨ #Shorts').
+- NEVER use boring academic titles like 'Tutorial' or 'Decorating Guide' because Shorts viewers scroll instantly and want excitement and curiosity.
+- Description: Line 1 must be a strong 1-sentence hook. Line 2 must describe the visible creation. Line 3 MUST be a call-to-action question that invites viewers to comment (e.g. 'Would you eat this or keep it as art? Tell me below! 👇').
+- Tags: 10 to 15 high-ranking tags mixing broad and specific.
 
 Output MUST be raw valid JSON adhering strictly to this schema:
 {{
-  "title": "Engaging, authentic title UNDER 60 characters with the primary keyword near the beginning describing the visible scene. No clickbait padding, no currency/price claims, and no ALL CAPS.",
-  "description": "3 to 5 lines total. The first 2 lines must carry a compelling hook visible before 'more' describing the authentic visuals. Followed by natural sentences with high-ranking keywords.",
+  "title": "Viral, curiosity-driven title under 60 chars ending with #Shorts. Grounded in visible visuals. No prices, no ALL CAPS.",
+  "description": "3 to 4 lines total. Hook in line 1, scene detail in line 2, question asking for comments in line 3.",
   "tags": ["10 to 15 tag keywords mixing broad and specific, total under 450 characters"],
   "hashtags": ["Three relevant hashtags without '#', exactly 3 items"]
 }}
@@ -532,23 +546,23 @@ def fallback_metadata(duration=0, channel_topic="", default_desc="", default_tag
     - description with hook and 3 hashtags
     - exactly 10 to 15 tags, total under 460 chars
     """
-    topic = channel_topic or "Dubai luxury lifestyle"
-    title = f"{topic} Highlights"[:59]
+    topic = channel_topic or "Creative Cake Art"
+    title = f"Amazing {topic} Creation #Shorts"[:65]
 
     # Curate high-relevance tags for channel niche
     base_tags = [
-        "luxury", "lifestyle", "dubai", "millionaire", "billionaire",
-        "supercars", "mansion", "wealth", "aesthetic", "vip", "exclusive", "rich"
+        "satisfying", "cakedecorating", "foodart", "creative",
+        "amazing", "diy", "baking", "pastrychef", "dessert", "art"
     ]
     tags = list(default_tags) if default_tags else []
     for t in base_tags:
         if t not in tags:
             tags.append(t)
-    if duration <= 60 and "shorts" not in [t.lower() for t in tags]:
+    if duration <= 180 and "shorts" not in [t.lower() for t in tags]:
         tags.insert(0, "shorts")
 
     # Pad to at least 10 tags if needed
-    padding = ["trending", "viral", "inspiration", "goals", "success"]
+    padding = ["trending", "viral", "explore", "craft", "satisfyingvideo"]
     for p in padding:
         if len(tags) >= 10:
             break
@@ -562,8 +576,8 @@ def fallback_metadata(duration=0, channel_topic="", default_desc="", default_tag
     while tags and len(",".join(tags)) >= 460:
         tags.pop()
 
-    hashtags = ["#shorts", "#luxury", "#lifestyle"]
-    desc = default_desc or f"Experience the finest {topic.lower()}.\nFollow for daily luxury updates.\nExclusive highlights."
+    hashtags = ["#shorts", "#cakedecorating", "#satisfying"]
+    desc = default_desc or f"Watch this incredible {topic.lower()} unfold!\nWould you eat this or keep it as art? Tell us below! 👇"
     desc = f"{desc}\n\n{' '.join(hashtags)}"
 
     return {

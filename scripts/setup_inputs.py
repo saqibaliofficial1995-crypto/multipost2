@@ -25,7 +25,7 @@ import requests
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 
-REPO = "bjviufutu-dot/multipost"
+REPO = "saqibaliofficial1995-crypto/multipost2"
 DRIVE_API = "https://www.googleapis.com/drive/v3"
 GEMINI_BASE_API = "https://generativelanguage.googleapis.com/v1beta"
 VIDEO_EXTS = (".mp4", ".mov", ".m4v")
@@ -109,7 +109,7 @@ def main():
             print("[FAIL] Access failed. Cause: wrong link (the folder ID does not exist or link is malformed).")
             sys.exit(1)
         elif r.status_code == 403:
-            print("[FAIL] Access failed. Cause: permissions problem (your account bjviufutu@gmail.com does not have permission to view this folder).")
+            print("[FAIL] Access failed. Cause: permissions problem (your account nooahali@gmail.com does not have permission to view this folder).")
             sys.exit(1)
         r.raise_for_status()
         f_data = r.json()
